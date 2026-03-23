@@ -147,7 +147,7 @@ export const MatchPage: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-6">
-              {matchedJobs.map((job) => (
+              {matchedJobs.map((job:any) => (
                 <JobCard
                   key={job.id}
                   job={job}

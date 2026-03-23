@@ -12,7 +12,8 @@ interface AppState {
   setUser: (user: User | null) => void
 }
 
-export const useStore = create<AppState>((set) => ({
+// 导出 useAppStore，和你页面里的导入名称完全一致
+export const useAppStore = create<AppState>((set) => ({
   user: null,
   setUser: (user) => set({ user }),
 }))
